@@ -78,10 +78,6 @@ try {
     console.log(error)
 }}
 
-export const getUserById = (req, res) => {
-try {
-} catch (error) {
-}}
 
 export const getSession = async (req, res) => {
     try {

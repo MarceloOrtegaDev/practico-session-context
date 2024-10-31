@@ -1,16 +1,15 @@
-import './App.css'
-import { ContextProvider } from './context/contextProvider.jsx'
-import { Home } from './views/home.jsx'
-import { Login } from './views/Login.jsx'
+import './App.css';
+import {authenticate } from './context/contextProvider.jsx';
+import { Home } from './views/home.jsx';
+import { Login } from './views/Login.jsx';
 
 function App() {
-
-  return (
-    <ContextProvider>
-      <Home />
-      <Login />
-    </ContextProvider>
-  )
+  const { state } = authenticate(); 
+    return (
+      <>
+            {state.isLogged ? <Home /> : <Login />}
+      </>
+    );
 }
 
-export default App
+export default App;
