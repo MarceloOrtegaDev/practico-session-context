@@ -1,4 +1,4 @@
-##Instalación
+## Instalación
 1. Clona el repositorio
 2. Instala las dependencias del frontend y backend con `npm install`
 ## Backend
