@@ -4,6 +4,7 @@ export const login = async (email, password) => {
     try {
         const response = await fetch(`${Url}login`, {
             method: 'POST',
+            credentials: "include",
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -18,7 +19,7 @@ export const login = async (email, password) => {
 
 export const sessionUser = async () => {
     try {
-        const response = await fetch(`${Url}session/`, {
+        const response = await fetch(`${Url}session`, {
             method: 'GET',
             credentials: 'include'
         });
@@ -31,7 +32,7 @@ export const sessionUser = async () => {
 
 export const logoutUser = async () => {
     try {
-        const response = await fetch(`${Url}logout/`, {
+        const response = await fetch(`${Url}logout`, {
             method: "POST",
             credentials: "include"
         });
