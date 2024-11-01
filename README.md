@@ -1,5 +1,3 @@
-# Sistema de Registro de Ventas para Comercio de Suministros de Limpieza
-
 ##Instalación
 1. Clona el repositorio
 2. Instala las dependencias del frontend y backend con `npm install`
